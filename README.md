@@ -2,6 +2,8 @@
 
 High-Performance experimental command-line tool for 2D segment-graph spatial analysis developed by Tasos Varoudis. Operates directly on a segment-map CSV for angular / metric / topological integration, betweenness/choice, and reach.
 
+It was used internally at the Space Syntax Lab at UCL since around 2015 and can run quite fast on very big multi-core systems (more than 256 cores). If you need a linux build be let me know and I'll release one.
+
 - **Version:** `0.95ang`
 - **Platform:** macOS on **Apple Silicon (arm64)** only — will not run on Intel Macs.
 - **Self-contained:** the OpenMP runtime is bundled; no Homebrew or other install is required.
@@ -14,7 +16,6 @@ High-Performance experimental command-line tool for 2D segment-graph spatial ana
 > included in this release and will be release once I have a bit of time to make it
 > more presentable... This was coded before the age of LLMs so the code is messy :)
 
-It was used internally at the Space Syntax Lab at UCL since around 2015 and can run quite fast on very big multi-core systems (more than 256 cores). If you need a linux build be let me know and I'll release one.
 ---
 
 ## What's in this folder
@@ -234,4 +235,4 @@ reach_of_segment_i = ids[off[i]:off[i+1]]
 
 `libomp.dylib` is the LLVM OpenMP runtime, redistributed here under the Apache
 License v2.0 with the LLVM exception. See <https://llvm.org> for details. All
-other code in the vSpace2D binaries is © Tasos Varoudis and is not open source.
+other code in the vSpace2D binaries is © Tasos Varoudis.
