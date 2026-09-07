@@ -1,0 +1,4 @@
+.DS_Store
+spectral_out/
+*.csv
+!README*.csv
